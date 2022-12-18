@@ -1,0 +1,566 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*MY STYLES*/
+
+
+/*Generic/general/default styles*/
+
+body{
+ font-family: 'Open Sans' , sans-serif;
+ font-size: 14px; /*1em is equivalent to 14px as well as 1rem)*/  
+ line-height: 1.5; 
+ color: black;
+}
+
+
+/*font size for header: 71pt actually come ack to that and confirm because I think you didnt pay attention to that*/
+
+/*padding vs margin. padding makes thing bigger. margin pushes things around.*/
+
+/*LAYOUT*/
+
+/*Search engine is flexbox*/
+
+
+
+h1{
+font-size: 71px;
+line-height: 106px;
+margin-bottom: 17px;
+font-weight: bold;
+}
+
+h2{
+font-size: 48px;
+margin-bottom:12px;
+font-weight: bold;
+}
+h3{
+	font-size: 34px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+P{
+margin-bottom: 14em;
+
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+
+}
+
+.container{
+padding: 1em;
+/* display: inline-block; */
+min-width: 100px;
+
+}
+
+nav{
+    background-color: #222222;
+}
+
+nav a:link,
+nav a:visited{
+	display: block;
+color: #c78b07;
+font-size: 18px;
+padding-top: 17px;
+padding-bottom: 17px;
+text-decoration: none;
+text-align: center;
+}
+
+nav li.current a:link,
+nav li.current a:visited {
+    background-color: #c78b07;
+    color: #000000;
+}
+
+.logo{
+background-color:#c78b07 ;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+header form {
+    display: flex;
+}
+
+header form input {
+    flex-grow: 1;
+    height: 35px;
+}
+/* nav.li.current a:link,
+nav li.current a:visited{
+	background-color: #c78b07;
+	color:black
+} */
+/* .listing{
+    font-size: 18px;
+    padding: 20px;
+} */
+
+/* WELCOME SECTION */
+
+.header-welcome{
+background-image: url(../final-project-img/images/images/main-banner.jpg);
+background-size: cover;
+padding-top: 68px;
+padding-bottom: 68px;
+}
+
+.header-welcome .container{
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+padding-top: 60px;
+}
+
+
+.button {
+	background-color:#c78b07;
+	border: none;
+	color:black;
+	/* padding: 36px 36px;
+	padding-top: 36px;
+	padding-bottom: 20px; */
+	text-align: center;
+	text-decoration: none;
+	display: table-cell;
+	font-size: 20px;
+	/* margin: 12px 2px; */
+	cursor: pointer;
+	/* margin-top: -180px; */
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    vertical-align: middle;
+    
+  }
+
+
+  .button2{
+	background-color:#222222;
+	border: none;
+	color:white;
+	text-align: center;
+	font-size: 20px;
+    text-decoration: none;
+padding: 36px 36px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+  }
+
+
+  .button3{
+	background-color:#10253C;
+	border:#c78b07;
+	color:white;
+	padding: 36px 36px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 13px;
+  }
+  .button4{
+    background-color:#222222;
+    color: #c78b07;
+    /* padding: auto;  */
+    /* padding-top:auto;
+    padding-bottom: auto; */
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+  }
+/* code a fancy rgba background */
+/* start from the outside and work inwards with the code */
+
+
+/* ABOUT SECTION */
+.section-about{
+	background-color: #ffe6ac;
+}
+/* .section-services .container{
+	background-image: url(final-project-img/images/images/digital.jpg);
+	max-width: 500%;
+	height: auto;
+} */
+/* .digital-transformation{
+	background-color: #ffe6ac;
+	font-size: 14px;
+} */
+
+/* .section-services{
+	background-image: url(final-project-img/images/images/digital.jpg);
+	background-size: cover;
+	max-width: 7000px;
+	padding-left: 25px;
+} */
+
+.section-vision{
+	background-image: url(final-project-img/images/images/vision.jpg);
+	background-size: cover;
+	padding-bottom: 40px;
+    margin-top: 500px;
+}
+
+#button3{
+    background-image: url(final-project-img/images/images/vision.jpg);
+    
+}
+/* come back to this, you forgot to get the border of yellow like the yellow mockup  */
+/* .about-left{
+	padding: 20px;
+} */
+
+/* .our-vision{
+	display: inline-block;
+	background-image: url(final-project-img/images/images/vision.jpg);
+} */
+.digital-transformation, .marketing, .web-dev, .print,.jean, .bobbo {
+	background-color: #ffe6ac;
+}
+
+.video-production{
+    background-color: #ffe6ac; 
+    height: 600px;  
+}
+
+.laptop-open, .laptop-marketing, .web-mobile, .print-street {
+	width: 100%;
+}
+.laptop-open{
+    background-color: #ffe6ac;
+    height: 200px;
+}
+
+.youtube-mobile{
+    width: 100%;
+    height: 25%;
+}
+
+
+input[type=text], select, textarea {
+    padding: 7px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+
+.map{
+display: flex;
+}
+
+/* Our vision button driving me insane */
+
+.footer-stuff{
+    background-color: #222222;
+    color: #c78b07;
+    text-align: left;
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    /* flex-grow: 1px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+    #juanito{
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    
+    #bobby{
+        font-size: 30px;
+        margin-bottom: 0px;
+        margin-left: 7px;
+    }
+    #co-own-ceo{
+        font-weight: 600;
+        font-size: 17px;
+        margin-left: 8px;
+       
+    }
+    hr{
+    border: 1px solid #c78b07;
+    width: 620px;
+    }
+    #ownertext{
+        margin-left: 10px;
+        margin-top: 17px;
+        font-size: 13px;
+        margin-right: 10px;
+       
+    }
+    
+    #messages {
+        margin-left: 0px;
+    }
+#splah{
+    color:#c78b07;
+}
+
+
+/* DESKTOP STYLES :') */
+
+ @media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1168px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+}
+    @media screen and (min-width: 760px){
+
+
+        .container {
+            width: 706px;
+            margin: 0 auto;
+        }
+    }
+
+
+    /* / DESKTOP STYLES HERE /
+
+
+    / NAVIGATION SECTION / */
+
+    nav a:link {
+        float: left;
+        width: 140px;
+    }
+
+    nav {
+        display: flex; 
+    }
+
+    nav li.current a:link,
+    nav li.current a:visited {
+        background-color:#c78b07;
+        color:#000000;
+    }
+
+    .logo {
+        background-color: #222222;
+    }
+
+    /* /WELCOME SECTION / */
+
+    .header-welcome .container {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding-top: 40px;
+        padding-bottom: 15px;
+        width: 60%;
+    }
+
+    .header-welcome button {
+        background-color: #c78b07;
+        border: none;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-size: 20px;
+    }
+
+    /*ABOUT SECTION */
+
+   .aboutimage {
+    width: 50%;
+    float: left;
+   }
+
+
+   .section-about {
+    background-color: #ffe6ac;
+    display: grid;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    width: 100%;
+    }
+
+/* Somehow I messed up my mobile after working on the desktop */
+   .serviceimage {
+    width: 50%;
+   }
+
+
+nav .grid-container {
+    display: grid;
+}
+
+
+.container{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px;
+}
+
+input[type=text], select, textarea {
+    padding: 7px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+.footer-stuff{
+    text-align: left;
+    width: 200%;
+    height: 100px;
+    font-size: 20px;
+    display: flex;
+    flex: auto;
+    /* flex-grow: 1px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: left;
+}
+  
+
+/* .wrapper{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.wrapper> *{
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header-body{
+
+} */
+
+.wrap{
+    display: flex;
+    flex: 30%;
+    height: 600px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.wrap1{
+    display: flex;
+    flex: 30%;
+    height: 600px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;   
+}
+
+.wrap-child{
+height: 100%;
+width: 32%;
+background-color: #ffe6ac;
+}
+
+.wrap-firstchild{
+height: 80%;
+width: 45%;
+background-color: #ffe6ac;
+}
+
+
+/*HOURS OF OPERATION*/
+
+table, th, td {
+    border:1px solid black;
+    text-align: left;
+    text-indent: 10px;
+    vertical-align: middle;
+}
+
+th:nth-child(even){
+    background-color:#ffe6ac;
+    text-align: center;
+}
+th:nth-child(odd){
+    background-color: #ffe6ac;
+    text-align: center;
+}
+/*MAP*/
+
+
+.column{
+  flex: 50%;
+}
+
+
+/* .column2{
+    flex: 200%;
+} */
+
+.msg{
+    display: flex;
+    flex: 50%;
+}
